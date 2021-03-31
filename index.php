@@ -29,6 +29,8 @@ $film = film("SELECT * FROM movie");
 	
 	<a class="btn btn-primary" href="tambah.php" role="button">Tambah Film</a>
 	<br><br>
+	
+
 	<div class="row">
 		 <div class="col-10">
 		 	<h4 class="daftardrama">Daftar Drama</h4>
@@ -52,6 +54,15 @@ $film = film("SELECT * FROM movie");
 					<td><?php echo $row["genre"]; ?> </td>
 					<td><?php echo $row["negara"]; ?> </td>
 					<td><img src="img/<?php echo $row["gambar"]; ?>" width="50"></td>
+					<td>
+					<a href ="ubah.php?id=
+					<?php echo $row["id"]; ?>">
+					Ubah</a> |
+
+					<a href="hapus.php?id=
+					<?php echo $row["id"]; ?>"
+					onclick=" return confirm('Anda Yakin?');">Hapus</a>
+					</td>
 
 				</tr>
 
