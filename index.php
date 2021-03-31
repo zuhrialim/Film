@@ -25,7 +25,7 @@
 	<br><br>
 	<div class="row">
 		 <div class="col-10">
-		 	<h4 class="daftardrama">Daftar Drama</h4>
+		 	<h4 class="daftardrama">Daftar Film</h4>
 
 		 	 <table id="mytable" class="table table-bordred table-striped">
 		 		<tr>
