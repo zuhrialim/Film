@@ -1,3 +1,9 @@
+<?php
+require 'functions.php';
+
+$film = film("SELECT * FROM movie");
+?>
+
 <html>
 <head>
 	<title>Film</title>
@@ -36,6 +42,21 @@
 		 			<th>Gambar</th>
 		 			<th>aksi</th>
 		 		</tr>
+
+					<?php $i=1; ?>
+					<?php foreach($film as $row) : ?>
+				<tr>
+					<td><?php echo $i; ?> </td>
+
+					<td><?php echo $row["nama"]; ?> </td>
+					<td><?php echo $row["genre"]; ?> </td>
+					<td><?php echo $row["negara"]; ?> </td>
+					<td><img src="img/<?php echo $row["gambar"]; ?>" width="50"></td>
+
+				</tr>
+
+				<?php $i++; ?>
+				<?php endforeach; ?>
 
 		 	</table>
 		 </div>
