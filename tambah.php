@@ -1,3 +1,21 @@
+<?php
+
+require 'functions.php';
+  
+if( isset($_POST["submit"]))
+  {
+
+  if( tambah($_POST) > 0 )
+  {
+    echo "Data berhasil ditambahkan";
+  }else {
+            echo "Data gagal ditambahkan";
+        }
+
+  }   
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +51,7 @@
     <input type="text" name="genre" class="form-control" id="genre">
   </div>
   <div class="form-group">
-    <label for="genre">Negara</label>
+    <label for="negara">Negara</label>
     <input type="text" name="negara" class="form-control" id="negara">
   </div>
   <div>
