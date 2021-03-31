@@ -1,6 +1,14 @@
 .daftardrama{
     font-size: 40px;
+    font-color: blue;
+    font-style: oblique;
 }
 #mytable{
-    font-size: 17px;
+    font-size: 19px;
+    font-color:black;
+}
+body{
+	background-image: url(bg.jpeg);
+
+
 }
