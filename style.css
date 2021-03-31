@@ -7,8 +7,9 @@
     font-size: 19px;
     font-color:black;
 }
+
 body{
-	background-image: url(bg.jpeg);
-
-
+	background-image: url("img/bg.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
 }
