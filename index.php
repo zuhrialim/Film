@@ -15,7 +15,7 @@ $film = film("SELECT * FROM movie");
 	<div class="fixed-top">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
+      <h4 class="text-white h4">Collapsed content</h4>
       <span class="text-muted">Toggleable via the navbar brand.</span>
     </div>
   </div>
