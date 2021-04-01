@@ -42,7 +42,8 @@ $film = film("SELECT * FROM movie");
 		 			<th>Genre</th>
 		 			<th>Negara</th>
 		 			<th>Gambar</th>
-		 			<th>aksi</th>
+		 			<th>Aksi</th>
+					<th></th>
 		 		</tr>
 
 					<?php $i=1; ?>
@@ -55,14 +56,14 @@ $film = film("SELECT * FROM movie");
 					<td><?php echo $row["negara"]; ?> </td>
 					<td><img src="img/<?php echo $row["gambar"]; ?>" width="50"></td>
 					<td>
-					<a href ="ubah.php?id=
+					<a class="btn btn-primary" href ="ubah.php?id=
 					<?php echo $row["id"]; ?>">
-					Ubah</a> |
-
-					<a href="hapus.php?id=
+					Ubah</a></td>
+					<td>
+					<a class="btn btn-danger" href="hapus.php?id=
 					<?php echo $row["id"]; ?>"
-					onclick=" return confirm('Anda Yakin?');">Hapus</a>
-					</td>
+					onclick=" return confirm('Anda Yakin?');">Hapus</a></td>
+				
 
 				</tr>
 
